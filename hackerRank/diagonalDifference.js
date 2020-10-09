@@ -38,14 +38,18 @@ function diagonalDifference(arr) {
     // - [X] Add the left-to-right diagonal of the matrix.
     // - [X] Add the right-to-left diagonal of the matrix.
     // - [X] Get the absolute difference of the sums.
+
     const length = arr.length;
     let leftToRight = 0;
     let rightToLeft = 0;
+
     for(let i = 0, j = length - 1; i < length; i++, j--) {
         leftToRight += arr[i][i];
         rightToLeft += arr[i][j];
     }
+
     const absDiff = Math.abs(leftToRight - rightToLeft);
+    
     return absDiff;
 
 }
