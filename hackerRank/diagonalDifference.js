@@ -30,10 +30,10 @@ function readLine() {
  */
 
 function diagonalDifference(arr) {
-    // Write your code here
 
     // Input: Array of Numbers.
     // Output: Number.
+
     // Algorithm:
     // - [X] Add the left-to-right diagonal of the matrix.
     // - [X] Add the right-to-left diagonal of the matrix.
@@ -49,9 +49,8 @@ function diagonalDifference(arr) {
     }
 
     const absDiff = Math.abs(leftToRight - rightToLeft);
-    
-    return absDiff;
 
+    return absDiff;
 }
 
 function main() {

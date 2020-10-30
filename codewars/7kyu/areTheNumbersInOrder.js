@@ -12,20 +12,18 @@
 //inAscOrder([1,6,10,18,2,4,20]); // returns false
 //inAscOrder([9,8,7,6,5,4,3,2,1]);
 
-
-
-
-
 function inAscOrder(arr) {
-    // input: array of numbers
-    // output: boolean
-    //algo
-    // [x] look at array of numbers
-    // [x] check if the number is greater than current number
-    // [x] if number is less than current number return false
-    // [x] if number is greater than current number return true
-    for(let i = 0; i < arr.length; i++){
-      if(arr[i] > arr[i + 1]) return false;
-    }
-      return true;
+  // input: array of numbers
+  // output: boolean
+
+  //algo
+  // [x] look at array of numbers
+  // [x] check if the number is greater than current number
+  // [x] if number is less than current number return false
+  // [x] if number is greater than current number return true
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > arr[i + 1]) return false;
   }
+  return true;
+}
