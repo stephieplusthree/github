@@ -31,3 +31,11 @@ function moveVowel(input) {
     }
     return(consonants.concat('', vowels));
   }
+
+  // answer two
+  function moveVowel(input) {
+    let vowels =  input.split("").filter(x => x.match(/[aeiou]/gi)).join("")
+    let nonVowls = input.split("").filter(x => x.match(/[^aeiou]/gi)).join("")
+     return nonVowls + vowels
+      
+}
